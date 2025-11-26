@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6178247c23930458fe6935b8720ed0, type: 3}
+  m_Name: IconDatabase
+  m_EditorClassIdentifier: 
+  iconList:
+  - iconID: 0
+    icon: {fileID: 21300000, guid: fe276e4c993bfe44ba7547b0e5091809, type: 3}
+  - iconID: 1
+    icon: {fileID: 21300000, guid: c8b58db9969f4fb4eb0466a7c7193df0, type: 3}
+  - iconID: 2
+    icon: {fileID: 21300000, guid: 65674c2a5e95c474eb7e23740656cb6c, type: 3}
+  - iconID: 3
+    icon: {fileID: 21300000, guid: f5b3da71f06e6ea4895027779099a714, type: 3}
+  - iconID: 4
+    icon: {fileID: 21300000, guid: 09f81132c22e7f24da6e3c83a8f8d61f, type: 3}
+  - iconID: 5
+    icon: {fileID: 21300000, guid: f17fdb6b7948c8c4cacd817f4a3cd55c, type: 3}
+  - iconID: 6
+    icon: {fileID: 21300000, guid: bc191e60db886b24d8c0cf517871bdf9, type: 3}
+  - iconID: 7
+    icon: {fileID: 21300000, guid: e69637b80b2d2f44484dd15eee611869, type: 3}
+  - iconID: 8
+    icon: {fileID: 21300000, guid: c0d42e05cae2036448b9e1d511503bd6, type: 3}
+  - iconID: 9
+    icon: {fileID: 21300000, guid: 8cb005fa31605a446bd180e1a9f14340, type: 3}
+  - iconID: 10
+    icon: {fileID: 21300000, guid: 96a53899b0a977c429e40bbe6fbb46a8, type: 3}
+  - iconID: 11
+    icon: {fileID: 21300000, guid: 5536e232bf3931645af3aa5c248ba0d7, type: 3}
+  - iconID: 12
+    icon: {fileID: 21300000, guid: 37493d55d5a7ff0428aa9d02984e963d, type: 3}
+  - iconID: 13
+    icon: {fileID: 21300000, guid: bbd99aa272837634e8039c1c30aa86b0, type: 3}
+  - iconID: 14
+    icon: {fileID: 21300000, guid: 138d21ee175ad344ca5c1c34ea73fb05, type: 3}
+  - iconID: 15
+    icon: {fileID: 21300000, guid: 7bf45e78fb33c274192694579743b38f, type: 3}
+  - iconID: 16
+    icon: {fileID: 21300000, guid: 6dc8bc896c32e1d4aaff4f98cca216f3, type: 3}
+  - iconID: 17
+    icon: {fileID: 21300000, guid: 59b33a347a261fe4ea24ba8454fb5639, type: 3}
+  - iconID: 18
+    icon: {fileID: 21300000, guid: 24f4eb62d6d24ac43905316b03c3bf94, type: 3}
