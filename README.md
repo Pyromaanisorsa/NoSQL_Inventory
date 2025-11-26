@@ -9,4 +9,5 @@ While in-game items have lots of variables and data - in MongoDB only necessary 
 
 When adding items to inventory the game takes into calculation: weight, empty slots and stackable items stacks.
 This hasn't been translated yet, but here's the flowchart of AddItem function in Assets/Scripts/Inventory/Inventory in finnish.
+
 <img src="AddItem_FlowChart.png" alt="AddItem function flowchart"/>
