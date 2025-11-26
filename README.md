@@ -5,4 +5,4 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 
 When adding items to inventory the game takes into calculation: weight, empty slots and stackable items stacks.
 This hasn't been translated yet, but here's the flowchart of AddItem function in Assets/Scripts/Inventory/Inventory in finnish.
-![AddItemFunction in Finnish(AddItem_FlowChart.png).
+<img src="AddItem_FlowChart.png" alt="AddItem function flowchart"/>
