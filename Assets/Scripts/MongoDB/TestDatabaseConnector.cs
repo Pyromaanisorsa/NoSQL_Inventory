@@ -20,7 +20,7 @@ public class TestDatabaseConnector : MonoBehaviour
     void Awake()
     {
         // Connection string to the MongoDB Atlas 
-        string connectionString = "mongodb+srv://sorsa:Qwerty1234qaz@nosqlcluster.5e0pn.mongodb.net/?retryWrites=true&w=majority&appName=NoSQLCluster";
+        string connectionString = "your-connection-string-to-your-mongoDB-cluster";
 
         // Initialize Mongoclient
         client = new MongoClient(connectionString);
@@ -81,7 +81,7 @@ public class TestDatabaseConnector : MonoBehaviour
         // Insert new player document to collection
         await playerCollection.InsertOneAsync(new MongoPlayer(username, password, inventoryID));
 
-        // Create filter to find player's inventory document with ínventory document _id for future use
+        // Create filter to find player's inventory document with Ã­nventory document _id for future use
         filter = Builders<MongoInventory>.Filter.Eq("_id", inventoryID);
         MessagePanel.Instance.DisplayMessage("Registration successful.");
         return true;
@@ -108,7 +108,7 @@ public class TestDatabaseConnector : MonoBehaviour
             return false;
         }
 
-        // Store inventory _id and create filter to find player's inventory document with ínventory document _id for future use
+        // Store inventory _id and create filter to find player's inventory document with Ã­nventory document _id for future use
         inventoryID = playerDoc.inventoryID;
         filter = Builders<MongoInventory>.Filter.Eq("_id", inventoryID);
         MessagePanel.Instance.DisplayMessage("Login succesful.");
