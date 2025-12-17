@@ -9,9 +9,12 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 - Multiple item types (eg. Weapon, Consumable, Bag) and slot types (WeaponSlot, InventorySlot, BagSlot)
 - Double clicking, right clicking and dragging inventory slots (by default Unity buttons only support left clicking)
 - Search bar to search items in all bags
-- Inventory synced with MongoDB collection (only updates inventory locally if mongoDB inventory item updates successfully)
 - Item Editor to create/edit/delete items and automatically update item database
 - Inventory supports stackable items and weight count, which are used when adding/unequipping items
+- Inventory synced with MongoDB collection (only updates inventory locally if mongoDB inventory item updates successfully)
+
+While in-game items can variety of different fields/variables depending on item type / subclass; mongoDB will only store miminal necessary data to keep track of inventory's state / contents.
+<img src="itemDataComparison.png" alt="In-game item data VS MongoDB inventory data" width="720"/>
 
 ## 🧩 Building your own MongoDB database for this project
 1. Create new database to your cluster called 'noSQL_Inventory'
