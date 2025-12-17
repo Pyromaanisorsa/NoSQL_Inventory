@@ -65,19 +65,19 @@ Figure: Item Editor - IconSelectionWindow.
 <img src="readmeGifs/mongoDB_doubleClick.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Double clicking - Uses consumable instantly.
 
-<img src="mongoDB_moveItems.gif" alt="Screenshot of the Unity project" width="720"/>
+<img src="readmeGifs/mongoDB_moveItems.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Dragging InventorySlots.
 
-<img src="mongoDB_dragStack.gif" alt="Screenshot of the Unity project" width="720"/>
+<img src="readmeGifs/mongoDB_dragStack.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Dragging stack to combine with another stack.
 
-<img src="mongoDB_dragItemToBag.gif" alt="Screenshot of the Unity project" width="720"/>
+<img src="readmeGifs/mongoDB_dragItemToBag.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Dragging item to another bag.
 
-<img src="mongoDB_rightClick02.gif" alt="Screenshot of the Unity project" width="720"/>
+<img src="readmeGifs/mongoDB_rightClick02.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Right Click Context Menu.
 
-<img src="mongoDB_searchBar.gif" alt="Screenshot of the Unity project" width="720"/>
+<img src="readmeGifs/mongoDB_searchBar.gif" alt="Screenshot of the Unity project" width="720"/>
 Figure: InventoryUI feature: Search Bar to search items from entire inventory.
 
 ## 🧱 Bonus
