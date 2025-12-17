@@ -63,9 +63,17 @@ Figure: Item Editor - EditItem Window.
 <img src="mongoDBItemEditorIconSelector.png" alt="Item Editor - Icon Selection" width="720"/><br/>
 Figure: Item Editor - IconSelectionWindow.
 
+## 🕹️ Inventory UI features
+<img src="readmeGifs/mongoDB_doubleClick.gif" alt="Screenshot of the Unity project" width="300"/>
+<img src="readmeGifs/mongoDB_doubleClick.gif" alt="Screenshot of the Unity project" width="300"/>
+<img src="readmeGifs/mongoDB_doubleClick.gif" alt="Screenshot of the Unity project" width="300"/>
+Figure: InventoryUI feature: Double clicking - Uses consumable instantly.
 
 
-Invenory UI supports different types of item slots (item, bag, weapon) and features like double clicking, right click context menu per item type / slot, search bar and dragging itemSlots in the UI. The slots react to these actions differently based off of the dragged/clicked item's type. 
+Figure: InventoryUI feature: Dragging InventorySlots.
+
+
+Figure: InventoryUI feature: Right Click Context Menu.
 
 While in-game items have lots of variables and data - in MongoDB only necessary data is saved like itemID and stackSize.
 
