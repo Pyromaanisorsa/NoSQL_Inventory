@@ -5,7 +5,7 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 
 
 ## 🕹️ Features
-- In-game Item & Icon databases
+- In-game Item & Icon databases (Assets/Databases/)
 - Multiple item types (eg. Weapon, Consumable, Bag) and slot types (WeaponSlot, InventorySlot, BagSlot)
 - Double clicking, right clicking and dragging inventory slots (by default Unity buttons only support left clicking)
 - Search bar to search items in all bags
@@ -22,7 +22,7 @@ Figure: On Left: Weapon's itemdata entry in Unity. On Right: inventory data stor
 1. Create new database to your cluster called 'noSQL_Inventory'
 2. Create 2 new collections to your new database called 'inventories' and 'players'
 - inventories will store player inventories, while players will store player data that contains reference to their respective inventory
-3. In Scripts/MongoDB/TestDatabaseConnector.cs -> add your cluster's connection string to row 23
+3. In Assets/Scripts/MongoDB/TestDatabaseConnector.cs -> add your cluster's connection string to row 23
 ````
 22  // Connection string to the MongoDB Atlas
 23  string connectionString = "your-connection-string-to-your-mongoDB-cluster";
@@ -45,6 +45,23 @@ Figure: On Left: Weapon's itemdata entry in Unity. On Right: inventory data stor
 34  // Access inventories collection
 35  inventoryCollection = database.GetCollection<MongoInventory>("inventories");
 ````
+
+## 🧱 Unity Editor - Item Editor
+Item Editor created to be used in the project in Unity Editor allows adding new items, editing data of already existing items and deleting items from the game. While you can edit item's data, you can't change it's subclass eg. change weapon to consumable, you must create new item instead. Whenever item is created or deleted; it's automatically added to / removed from the item database and itemID will be assigned for it. If item that is not the newest item is deleted, the dropped itemID will be stored in Assets/Databases/ItemManagerSave file's DroppedID list, it also keeps track of next itemID if there are no dropped itemIDs. Item variable fields are automatically generated using LINQ and it also features icon selection window that shows all icons in the iconDatabase.
+
+<img src="mongoDBItemEditor.png" alt="Item Editor Window" width="720"/><br/>
+Figure: Item Editor Window.
+
+<img src="mongoDBItemEditorCreateItem.png" alt="Item Editor - CreateItem Window" width="720"/><br/>
+Figure: Item Editor - CreateItem Window.
+
+<img src="mongoDBItemEditorEditItem.png" alt="Item Editor - EditItem Window" width="720"/><br/>
+Figure: Item Editor - EditItem Window.
+
+<img src="mongoDBItemEditorIconSelector.png" alt="Item Editor - Icon Selection" width="720"/><br/>
+Figure: Item Editor - IconSelectionWindow.
+
+
 
 Invenory UI supports different types of item slots (item, bag, weapon) and features like double clicking, right click context menu per item type / slot, search bar and dragging itemSlots in the UI. The slots react to these actions differently based off of the dragged/clicked item's type. 
 
