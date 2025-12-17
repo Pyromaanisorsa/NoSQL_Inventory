@@ -13,6 +13,34 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 - Item Editor to create/edit/delete items and automatically update item database
 - Inventory supports stackable items and weight count, which are used when adding/unequipping items
 
+## 🧩 Building your own MongoDB database for this project
+1. Create new database to your cluster called 'noSQL_Inventory'
+2. Create 2 new collections to your new database called 'inventories' and 'players'
+- inventories will store player inventories, while players will store player data that contains reference to their respective inventory
+3. In Scripts/MongoDB/TestDatabaseConnector.cs -> add your cluster's connection string to row 23
+````
+22  // Connection string to the MongoDB Atlas
+23  string connectionString = "mongodb+srv://sorsa:Qwerty1234qaz@nosqlcluster.5e0pn.mongodb.net/?appName=NoSQLCluster";
+````
+4. Uncomment row 39 in TestDatabaseConnector.cs to create UserName for players collection to enable username indexing (You only need to run this line once and then recomment the line)
+````
+37  // Add indexation to playerCollection "username" fields.
+38  // This needs to be only run once and the indexation stays in the collection for all documents
+39  //CreateUsernameIndex();
+````
+6. The database should now be usable ingame -> start the game -> register a player -> start collecting items and database should store the inventory data
+PS. You don't necessarily have to name the collections and database same way as mine. Just rename the database & collection names in rows 29, 32 and 35.
+````
+28  // Connect to the database
+29  database = client.GetDatabase("noSQL_Inventory");
+
+31  // Access players collection
+32  playerCollection = database.GetCollection<MongoPlayer>("players");
+
+34  // Access inventories collection
+35  inventoryCollection = database.GetCollection<MongoInventory>("inventories");
+````
+
 Invenory UI supports different types of item slots (item, bag, weapon) and features like double clicking, right click context menu per item type / slot, search bar and dragging itemSlots in the UI. The slots react to these actions differently based off of the dragged/clicked item's type. 
 
 While in-game items have lots of variables and data - in MongoDB only necessary data is saved like itemID and stackSize.
