@@ -28,8 +28,8 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 38  // This needs to be only run once and the indexation stays in the collection for all documents
 39  //CreateUsernameIndex();
 ````
-6. The database should now be usable ingame -> start the game -> register a player -> start collecting items and database should store the inventory data
-PS. You don't necessarily have to name the collections and database same way as mine. Just rename the database & collection names in rows 29, 32 and 35.
+5. The database should now be usable ingame -> start the game -> register a player -> start collecting items and database should store the inventory data
+<br/>PS. You don't necessarily have to name the collections and database same way as mine. Just rename the database & collection names in rows 29, 32 and 35.
 ````
 28  // Connect to the database
 29  database = client.GetDatabase("noSQL_Inventory");
