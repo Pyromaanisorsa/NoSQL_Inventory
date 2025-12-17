@@ -8,6 +8,7 @@ Invenory UI supports different types of item slots (item, bag, weapon) and featu
 While in-game items have lots of variables and data - in MongoDB only necessary data is saved like itemID and stackSize.
 
 ![System Architecture](readmeGifs/mongoDB_doubleClick.gif)
+<img src="readmeGifs/mongoDB_doubleClick.gif" alt="Screenshot of the Unity project" width="720"/>
 
 When adding items to inventory the game takes into calculation: weight, empty slots and stackable items stacks.
 This hasn't been translated yet, but here's the flowchart of AddItem function in Assets/Scripts/Inventory/Inventory in finnish.
