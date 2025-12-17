@@ -15,7 +15,7 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 
 While in-game items can variety of different fields/variables depending on item type / subclass; mongoDB will only store miminal necessary data to keep track of inventory's state / contents.
 The game converts item data on fly to it's mongoDB format (mongoItemData, mongoWeaponData etc.) to efficiently & easily store the inventory data.
-<br/><img src="itemDataComparison.png" alt="In-game item data VS MongoDB inventory data" width="720"/>
+<img src="itemDataComparison.png" alt="In-game item data VS MongoDB inventory data" width="720"/><br/>
 Figure: On Left: Weapon's itemdata entry in Unity. On right inventory data stored in MongoDB.
 
 ## 🧩 Building your own MongoDB database for this project
