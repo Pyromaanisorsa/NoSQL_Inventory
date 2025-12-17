@@ -20,7 +20,7 @@ Unity inventory system where inventory data is stored and updated in MongoDB NoS
 3. In Scripts/MongoDB/TestDatabaseConnector.cs -> add your cluster's connection string to row 23
 ````
 22  // Connection string to the MongoDB Atlas
-23  string connectionString = "mongodb+srv://sorsa:Qwerty1234qaz@nosqlcluster.5e0pn.mongodb.net/?appName=NoSQLCluster";
+23  string connectionString = "your-connection-string-to-your-mongoDB-cluster";
 ````
 4. Uncomment row 39 in TestDatabaseConnector.cs to create UserName for players collection to enable username indexing (You only need to run this line once and then recomment the line)
 ````
