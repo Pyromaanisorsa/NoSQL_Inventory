@@ -47,7 +47,9 @@ Figure: On Left: Weapon's itemdata entry in Unity. On Right: inventory data stor
 ````
 
 ## 🧱 Unity Editor - Item Editor
-Item Editor created to be used in the project in Unity Editor allows adding new items, editing data of already existing items and deleting items from the game. While you can edit item's data, you can't change it's subclass eg. change weapon to consumable, you must create new item instead. Whenever item is created or deleted; it's automatically added to / removed from the item database and itemID will be assigned for it. If item that is not the newest item is deleted, the dropped itemID will be stored in Assets/Databases/ItemManagerSave file's DroppedID list, it also keeps track of next itemID if there are no dropped itemIDs. Item variable fields are automatically generated using LINQ and it also features icon selection window that shows all icons in the iconDatabase.
+Item Editor created to be used in the project in Unity Editor allows adding new items, editing data of already existing items and deleting items from the game. While you can edit item's data, you can't change it's subclass eg. change weapon to consumable, you must create new item instead.<br/>
+Whenever item is created or deleted; it's automatically added to / removed from the item database and itemID will be assigned for it. If item that is not the newest item is deleted, the dropped itemID will be stored in Assets/Databases/ItemManagerSave file's DroppedID list, it also keeps track of next itemID if there are no dropped itemIDs.<br/>
+Item variable fields are automatically generated using LINQ and it also features icon selection window that shows all icons in the iconDatabase.
 
 <img src="mongoDBItemEditor.png" alt="Item Editor Window" width="720"/><br/>
 Figure: Item Editor Window.
